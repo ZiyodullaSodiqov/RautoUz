@@ -101,3 +101,15 @@
   .total{
     display: flex;
   }
+  .LoanApp{
+    transform: translateX(50px);
+  }
+  
+@media only screen and (max-width: 600px) {
+  .LoanApp{
+    transform: translateX(-440px);
+  }
+  .print__button{
+    transform: translateY(75px) translateX(-320px);
+  }
+}

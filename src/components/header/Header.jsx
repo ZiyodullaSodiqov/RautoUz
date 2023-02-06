@@ -204,13 +204,13 @@ const Header = (props) => {
                                 className="translator mr-3"
                                 onClick={() => dispatch(changeLang("0"))}
                             >
-                                <img src={uzFlag} alt="translator" width="20px" />
+                                <img src={uzFlag} alt="translator" width="25px" />
                             </button>
                             <button
                                 className="translator mr-3"
                                 onClick={() => dispatch(changeLang("1"))}
                             >
-                                <img src={ruFlag} alt="translator" width="20px" />
+                                <img src={ruFlag} alt="translator" width="25px" />
                             </button>
                             <Link to="/compare" className="headers__icons-item">
                                 <button
@@ -298,7 +298,9 @@ const Header = (props) => {
                                     {collapseOneOpen ? (
                                         <>
                                             <div className="menu__link">
-                                                <p>{aksia[lang]}</p>
+                                                <Link to="/acsia">
+                                                    <p>{aksia[lang]}</p>
+                                                </Link>
                                             </div>
                                             <div className="menu__link">
                                                 <Link to="/useful">
@@ -543,7 +545,9 @@ const Header = (props) => {
                                 <div className="absch">
                                     <div className="labsch">
                                         <div className="ltr">
-                                            {aksia[lang]}
+                                            <Link to="/acsia">
+                                                {aksia[lang]}
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="rabsch">

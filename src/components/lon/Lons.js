@@ -59,7 +59,7 @@ export default function Lon() {
 
 
   return (
-    <div className="container">
+    <div className="LoanApp">
       <div className="loan-calculator-container">
         <h1>{colh1[lang]}</h1>
         <form onSubmit={handleSubmit}>

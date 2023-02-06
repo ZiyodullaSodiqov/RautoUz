@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import KomisImg from '../../images/komissia.png'
+import Certificat from '../../images/certificat.jpg'
 import { Language } from '../../lang/Languages'
 import '../../components/style.css'
 
@@ -12,6 +13,7 @@ function Quality() {
             <div className='pages-container'>
                 <h3 className='komissia-title'>{qu1[lang]}</h3>
                 <div className='komissia-wrap'>
+                <img src={Certificat} alt='certificat' className='certificat-img' />
                     <h3>{qu2[lang]}</h3>
                     <ul className='komissia-list'>
                         <li>{qu3[lang]}</li>
@@ -22,6 +24,7 @@ function Quality() {
                         <li className='mt-3'>{qu8[lang]}</li>
                     </ul>
                 </div>
+                {/*  */}
             </div>
         </main>
   )

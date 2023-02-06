@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import Avtosalon from '../../images/ravtosalon.jpg'
 import mashinalar from '../../images/mashinalar.jpeg'
 import malibu from "../../images/malibu2.jpg"
+import Certificat from "../../images/certificat.jpg"
 import { Language } from '../../lang/Languages'
 import '../../components/style.css'
 
@@ -33,7 +34,7 @@ function Aboutus() {
                         <li>{ab6[lang]}</li>
                     </ul>
                 </div>
-                <img src={malibu} className="about-img" />
+                <img src={Certificat} className="about-img" />
                 <div className='komissia-wrap'>
                   <h3>{ab7[lang]}</h3>
                     <ul className='komissia-list'>

@@ -1,8 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Fragment, useState } from "react";
 import { useSelector } from "react-redux";
-import { useForm } from "react-hook-form";
-import { toast, ToastContainer } from "react-toastify";
+    import { useForm } from "react-hook-form";
+    import { toast, ToastContainer } from "react-toastify";
 import { PhoneFilled } from "@ant-design/icons";
 import { Button, Modal } from "antd";
 import { Language } from "./lang/Languages";
@@ -62,6 +62,7 @@ import ModeratorLogin from "./components/ModeratorLogin/ModeratorLogin";
 import MadAdmin from "./pages/madAdmin/madAdmin";
 import CreateMad from "./pages/MadCreate/MadCreate";
 import Contact from "./pages/contact/Contact";
+import Action from "./pages/action/Action";
 
 
 function App() {
@@ -153,6 +154,7 @@ function App() {
                 <Route path="/admin/applications/:id" element={<UpdateApplication />} />
                 <Route path="/applications/create" element={<CreditAuto />} />
                 <Route path="/contacts" element={<Contact />} />
+                <Route path="/acsia" element={<Action />} />
             </Routes>
             <Button
                 shape="circle"
